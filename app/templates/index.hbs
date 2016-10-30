@@ -1,3 +1,11 @@
 <header>
   <h1>Welcome to Small Talk</h1>
 </header>
+
+<ul class="list-group">
+  {{#each model as |question|}}
+    <li class="list-group-item">{{rental.author}}</li>
+    <li class="list-group-item">{{rental.question}}</li>
+    <li class="list-group-item">{{rental.notes}}</li>
+  {{/each}}
+</ul>
