@@ -2,10 +2,16 @@
   <h1>Welcome to Small Talk</h1>
 </header>
 
-<ul class="list-group">
+<div class="container">
   {{#each model as |question|}}
-    <li class="list-group-item">{{rental.author}}</li>
-    <li class="list-group-item">{{rental.question}}</li>
-    <li class="list-group-item">{{rental.notes}}</li>
+    <h3>{{question.author}}</h3>
+    <ul class="list-group">
+      <li class="list-group-item">{{question.content}}</li>
+      <li class="list-group-item">{{question.notes}}</li>
+    </ul>
   {{/each}}
-</ul>
+</div>
+
+<footer>
+  <p>Copyright 2016 | Developed by Sam Peppard</p>
+</footer>
