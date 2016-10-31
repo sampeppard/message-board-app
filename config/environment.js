@@ -17,6 +17,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: 'AIzaSyBv9yQyi0Ri_Rpa_ijuiwkX5WT7a46BLdo',
+      authDomain: 'small-talk-aa58c.firebaseapp.com',
+      databaseURL: 'https://small-talk-aa58c.firebaseio.com',
+      storageBucket: 'small-talk-aa58c.appspot.com'
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
