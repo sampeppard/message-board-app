@@ -1,17 +1,13 @@
 <header>
-  <h1>Welcome to Small Talk</h1>
+  <h1>small talk</h1>
 </header>
 
 <div class="container">
   {{#each model as |question|}}
-    <h3>{{question.author}}</h3>
-    <ul class="list-group">
-      <li class="list-group-item">{{question.content}}</li>
-      <li class="list-group-item">{{question.notes}}</li>
-    </ul>
+    {{question-tile question=question}}
   {{/each}}
 </div>
 
 <footer>
-  <p>Copyright 2016 | Developed by Sam Peppard</p>
+  <p> &copy; Copyright 2016 | Developed by Sam Peppard</p>
 </footer>
