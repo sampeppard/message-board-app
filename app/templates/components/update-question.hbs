@@ -1,5 +1,5 @@
-{{#if addNewQuestion}}
-  <h3>New Question</h3>
+{{#if updateQuestionForm}}
+  <h4>Update {{question.author}}'s Question</h4>
   <form>
     <div class="form-group">
       <label for="author">Owner</label>
@@ -12,12 +12,13 @@
     </div>
 
     <div class="form-group">
-      <label for="notes">Question Details</label>
-      {{textarea class="form-control" value=notes id="notes"}}
+      <label for="details">Question Details</label>
+      {{textarea class="form-control" value=details id="details"}}
     </div>
     <br>
-    <button class="btn btn-xs btn-success" {{action 'saveQuestion1'}}>Save</button>
+    <button class="btn btn-xs btn-success" {{action "update" question}}>Save</button>
   </form>
 {{else}}
-  <button class="btn btn-xs btn-success" {{action "questionFormShow"}}>New Question</button>
+  <br>
+  <button  class="btn btn-xs"{{action "updateQuestionForm"}}>Update</button>
 {{/if}}
