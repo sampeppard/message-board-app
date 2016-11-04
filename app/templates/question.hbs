@@ -1,14 +1,9 @@
-{{header-template}}
 
-<div class="container">
-  <h2>More information about {{model.author}}'s question</h2>
+<h2>More information about {{model.author}}'s question</h2>
 
-  {{question-detail question=model}}
+{{question-detail question=model}}
 
-  {{update-question question=model update="update"}}
+{{update-question question=model update="update"}}
 
-  <br>
-  {{#link-to 'index'}}<p>Home</p>{{/link-to}}
-</div>
-
-{{footer-template}}
+<br>
+{{#link-to 'index'}}<p>Home</p>{{/link-to}}
