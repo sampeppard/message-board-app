@@ -1,11 +1,5 @@
-<h3>{{question.content}}</h3>
-<p>posted by: {{question.author}}</p>
-{{#if isImageShowing}}
-  <ul class="list-group">
-    <li class="list-group-item">{{question.notes}}</li>
-  </ul>
-  <button class="btn btn-xs" {{action 'imageHide'}}>Hide question</button>
-{{else}}
-  <button class="btn btn-xs" {{action 'imageShow'}}>Show question</button>
-{{/if}}
-{{update-question question=question update="update"}}
+
+{{#link-to 'question' question.id}}
+  <h3>{{question.content}}</h3>
+  <p>posted by: {{question.author}}</p>
+{{/link-to}}

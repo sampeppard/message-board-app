@@ -1,11 +1,10 @@
-<header>
-  <h1>small talk</h1>
-</header>
+{{header-template}}
 
 <div class="container">
   <div class="col-sm-6">
     {{#each model as |question|}}
       {{question-tile question=question update="update"}}
+      <hr>
     {{/each}}
   </div>
   <br>
@@ -15,6 +14,4 @@
   </div>
 </div>
 
-<footer>
-  <p> &copy; 2016 | Developed by Sam Peppard</p>
-</footer>
+{{footer-template}}
