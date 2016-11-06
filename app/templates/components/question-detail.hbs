@@ -1,12 +1,3 @@
 <div class="question-notes">
   <p>{{question.notes}}</p>
 </div>
-
-<ul class="list-group">
-  {{#each model.answers as |answer|}}
-    <li class="list-group-item">
-      <p>{{answer.content}}</p>
-      <p>answered by - {{answer.author}} | rating: {{answer.rating}}</p>
-    </li>
-  {{/each}}
-</ul>
