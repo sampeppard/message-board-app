@@ -1,0 +1,6 @@
+<li class="list-group-item">
+  <p>{{answer.content}}</p>
+  <p>answered by - {{answer.author}} | rating: {{answer.rating}}</p>
+  <br>
+  <button class="btn btn-xs btn-danger" {{action 'delete' answer}}>Delete Answer</button>
+</li>
