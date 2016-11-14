@@ -3,3 +3,5 @@
   <h3>{{question-popularity question}} {{question.content}}</h3>
   <p>posted by: {{question.author}}</p>
 {{/link-to}}
+
+<button class="btn btn-xs btn-primary" {{action 'addToFavorites' question}}>Add to Favorites</button>

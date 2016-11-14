@@ -1,14 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  isImageShowing: false,
-  updateRentalForm: false,
+  favorites: Ember.inject.service(),
+
   actions: {
-    imageShow: function() {
-      this.set('isImageShowing', true);
-    },
-    imageHide: function() {
-      this.set('isImageShowing', false);
+    addToFavorites(question) {
+      this.get('favorites').add(question);
     }
   }
 });
