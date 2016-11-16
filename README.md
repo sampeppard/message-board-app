@@ -93,3 +93,6 @@ No known bugs.
 For comments or questions, please email sampeppard@gmail.com
 
 ----
+### **License**
+
+MIT
