@@ -1,7 +1,38 @@
-# Message-board-app
+# *Small Talk*
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+##### A project built with Ember.js. 11.15.2016
+#
+##### By [Sam Peppard](https://github.com/sampeppard)
+#
+![screenshot of project main page](app/images/demo-screenshot.jpg)
+
+----
+### **Description**
+
+An application meant to start up small conversation topics where any user can contribute to a topic. There is a response limit to each topic in order to keep the topics in the realm of "small talk."
+
+----
+### **Specifications**
+| _Behavior_ | _Input_ | _Output_ |
+|:---------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------:|
+| Enter a topic/question | New question: Best way to make fajitas | Result: "i'm looking for the best way to make fajitas, any suggestions?" |
+| Enter topic/question's author | Question's author: Bob Sherman | Result: author: Bob Sherman |
+| Enter question details | Enter any details or notes about question: "i'm looking to make these fajitas on the cheap!" | Result: notes: "i'm looking to make these fajitas on the cheap!" |
+| View logged questions/topics | Select question/topic | edit a question/topic's content, author or details |
+
+----
+### **Technologies Used**
+
+* HTML
+* CSS
+* JavaScript
+* Ember.js
+* Handlebars.js
+* Broccoli.js
+* Bootstrap
+* npm JS package manager
+* Bower package manager
+----
 
 ## Prerequisites
 
@@ -51,3 +82,14 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+### **Known Bugs**
+
+No known bugs.
+
+----
+### **Support and contact details**
+
+For comments or questions, please email sampeppard@gmail.com
+
+----
