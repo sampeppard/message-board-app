@@ -9,7 +9,7 @@
 ----
 ### **Description**
 
-An application meant to start up small conversation topics where any user can contribute to a topic. There is a response limit to each topic in order to keep the topics in the realm of "small talk."
+An application meant to start up small conversation topics where any user can contribute to a topic.
 
 ----
 ### **Specifications**
